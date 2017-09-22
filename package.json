@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "watch": "node build/build.js --watch",
+    "dev-server": "webpack-dev-server --config  examples/2-webpack-dev-server/webpack.config --open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
     "rimraf": "^2.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2",
