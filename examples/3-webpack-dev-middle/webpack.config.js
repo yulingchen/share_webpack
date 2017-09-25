@@ -14,13 +14,10 @@ const webpackConfig = {
         filename: 'bundle.js',
         publicPath: '/'
     },
-    devServer: {
-        contentBase: exampleDir('dist')
-    },
     plugins: [
         new CleanWebpackPlugin([exampleDir('dist')]),
         new HtmlWebpackPlugin({
-            title: 'webpack-dev-server',
+            title: 'webpack-dev-middle',
             template: exampleDir('index.html')
         })
     ],
