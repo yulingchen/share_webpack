@@ -1,6 +1,7 @@
 const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
 const argv = require('yargs').argv
 
 const exampleDir = argv.example
@@ -16,6 +17,12 @@ const compiler = webpack(config);
 // configuration file as a base.
 app.use(webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath
+}));
+
+app.use(webpackHotMiddleware(compiler, {
+    log: console.log,
+    path: '/__webpack_hmr',
+    heartbeat: 10 * 1000
 }));
 
 // Serve the files on port 3000.
