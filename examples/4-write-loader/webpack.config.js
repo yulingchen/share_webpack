@@ -22,7 +22,12 @@ const webpackConfig = {
         rules: [
             {
                 test: /\.my/,
-                use: 'my-loader'
+                use: {
+                    loader: "my-loader",
+                    options: {
+                        debug: true
+                    }
+                }
             }
         ]
     },
