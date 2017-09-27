@@ -23,3 +23,7 @@
 # 资源
 * Node.js ES2015/ES6, ES2016 and ES2017 support
   http://node.green/
+* webpack资源
+  https://github.com/webpack-contrib/awesome-webpack
+* cross-env解决跨平台设置NODE_ENV的问题
+  https://github.com/yulingchen/cross-env
