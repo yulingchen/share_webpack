@@ -18,6 +18,7 @@
   - watch mode
   - webpack-dev-server
   - webpack-dev-middle
+* Babel/ES*
 
 # 资源
 * Node.js ES2015/ES6, ES2016 and ES2017 support
