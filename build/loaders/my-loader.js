@@ -3,8 +3,6 @@ const loaderUtils = require("loader-utils")
 module.exports = function myLoader(source, map) {
     const options = loaderUtils.getOptions(this)
 
-    //处理source
-
-    this.callback(null, source, map);
-    return;
+    //显示my文件内容
+    return `module.exports = function(){alert('${source}')}`
 }

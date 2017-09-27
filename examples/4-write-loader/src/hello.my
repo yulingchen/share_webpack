@@ -1,3 +1,1 @@
-export default function hello() {
-    alert('hello loader')
-}
+hello loader

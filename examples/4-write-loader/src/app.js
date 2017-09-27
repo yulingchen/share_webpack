@@ -1,11 +1,11 @@
-import hello from './hello'
+import showMy from './hello'
 
 function component() {
     var element = document.createElement('div');
     var btn = document.createElement('button');
 
     btn.innerHTML = 'Click me';
-    btn.onclick = hello;
+    btn.onclick = showMy;
 
     element.appendChild(btn);
 
