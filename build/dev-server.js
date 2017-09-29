@@ -1,3 +1,5 @@
+const os = require('os');
+const opn = require('opn');
 const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -25,7 +27,26 @@ app.use(webpackHotMiddleware(compiler, {
     heartbeat: 10 * 1000
 }));
 
+const IP = function () {
+    var interfaces = os.networkInterfaces()
+    var IPv4 = '127.0.0.1'
+    for (var key in interfaces) {
+        var alias = 0
+        interfaces[key].forEach(function (details) {
+            if (details.family == 'IPv4' && details.address.indexOf('10.5') > -1) {
+                IPv4 = details.address
+            }
+        })
+    }
+    return IPv4
+}()
+
+const port = 3000
+const uri = 'http://' + IP + ':' + port
+
 // Serve the files on port 3000.
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log('Listening on port 3000!\n');
+
+    opn(uri)
 });
