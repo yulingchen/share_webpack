@@ -25,5 +25,9 @@
   http://node.green/
 * webpack资源
   https://github.com/webpack-contrib/awesome-webpack
+* webpack升级到新版本
+  https://doc.webpack-china.org/guides/migrating/
 * cross-env解决跨平台设置NODE_ENV的问题
   https://github.com/yulingchen/cross-env
+* Windows vs. POSIX
+  https://nodejs.org/api/path.html#path_windows_vs_posix
