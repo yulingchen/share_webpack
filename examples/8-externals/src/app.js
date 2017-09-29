@@ -1,3 +1,5 @@
 import _$ from 'jquery'
 
-_$('body').append('<span>external jquery</span>')
+const title = 'external jquery'
+
+_$('body').append(`<span>${title}</span>`)
