@@ -1,0 +1,14 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false,
+                "debug": true
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-runtime"
+    ]
+}

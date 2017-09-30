@@ -7,7 +7,7 @@ function exampleDir(filepath) {
 }
 
 const webpackConfig = {
-    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-module-eval-source-map',
+    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'inline-cheap-source-map',
     entry: exampleDir('src/app.js'),
     output: {
         path: exampleDir('dist'),

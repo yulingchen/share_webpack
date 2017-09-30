@@ -20,6 +20,7 @@
   - webpack-dev-middle
 * Babel/ES*
 
+
 # 资源
 * Node.js ES2015/ES6, ES2016 and ES2017 support
   http://node.green/
@@ -31,3 +32,7 @@
   https://github.com/yulingchen/cross-env
 * Windows vs. POSIX
   https://nodejs.org/api/path.html#path_windows_vs_posix
+* babel-preset-env
+  http://2ality.com/2017/02/babel-preset-env.html
+* ECMAScript 5/6/7 compatibility tables
+  https://github.com/kangax/compat-table

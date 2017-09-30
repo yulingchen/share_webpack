@@ -8,7 +8,7 @@ function exampleDir(filepath) {
 }
 
 const webpackConfig = {
-    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-module-eval-source-map',
+    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'inline-cheap-source-map',
     entry: [
         'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
         exampleDir('src/app.js')
