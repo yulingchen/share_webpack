@@ -18,7 +18,7 @@
   - watch mode
   - webpack-dev-server
   - webpack-dev-middle
-* Babel/ES*
+* Babel/ES* preset polyfill runtime
 
 
 # 资源
@@ -36,3 +36,5 @@
   http://2ality.com/2017/02/babel-preset-env.html
 * ECMAScript 5/6/7 compatibility tables
   https://github.com/kangax/compat-table
+* babel-plugin-transform-runtime支持的转换
+  https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/definitions.js

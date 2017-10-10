@@ -15,12 +15,14 @@ const webpackConfig = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                use: 'babel-loader'
+                use: {
+                    loader: 'babel-loader'
+                }
             }
         ]
     },
     plugins: [
-        // new UglifyJSPlugin(),
+        new UglifyJSPlugin(),
         new CleanWebpackPlugin([path.resolve(__dirname, 'dist')]),
         new HtmlWebpackPlugin({
             title: 'tree sharking',
